@@ -1,0 +1,13 @@
+package Koneksi;
+import java.sql.Connection;
+
+public class CekKoneksi {
+    public static void main(String[] args) {
+        Connection c = Koneksi.configDB();
+        if (c != null) {
+            System.out.println("HHHH YES! NetBeans Berhasil Terhubung ke XAMPP!");
+        } else {
+            System.out.println("aja sendiri!");
+        }
+    }
+}
